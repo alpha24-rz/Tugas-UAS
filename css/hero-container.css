@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Container for the Hero Section */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin: 20px 160px;
+}
+
+.hero-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.text-container {
+  text-align: center;
+  color: #414141;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background-color: #414141;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 20px 0;
+  font-family: "Cormorant+Garamond", "Times New Roman", Times, serif;
+}
+
+.shop-now {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Query for Smaller Screens */
+@media (min-width: 640px) {
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .hero-left {
+    padding: 0;
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .main-title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}

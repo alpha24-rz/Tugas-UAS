@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zar</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/page_collection.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-img">
+          <img src="assets/logo.png" alt="#" />
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="collection.html">COLLECTION</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div class="icon-img">
+          <a href="collection.html"
+            ><img src="assets/search_icon.png" alt=""
+          /></a>
+          <a href="login.html"><img src="assets/profile_icon.png" alt="" /></a>
+          <a href="cart.html"><img src="assets/cart_icon.png" alt="" /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="filter-layout">
+      <!-- Filter Options -->
+      <div class="filter-sidebar">
+        <p onclick="setShowFilter(!showFilter)" class="filter-title">
+          FILTERS
+          <img class="filter-toggle" src="dropdown-icon-url" alt="" />
+        </p>
+
+        <!-- Category Filter -->
+        <div class="filter-box">
+          <p class="filter-header">CATEGORIES</p>
+          <div class="filter-options">
+            <label>
+              <input type="checkbox" value="Men" onchange="toggleCategory()" />
+              Men
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="Women"
+                onchange="toggleCategory()"
+              />
+              Women
+            </label>
+            <label>
+              <input type="checkbox" value="Kids" onchange="toggleCategory()" />
+              Kids
+            </label>
+          </div>
+        </div>
+
+        <!-- SubCategory Filter -->
+        <div class="filter-box">
+          <p class="filter-header">TYPE</p>
+          <div class="filter-options">
+            <label>
+              <input
+                type="checkbox"
+                value="Topwear"
+                onchange="toggleSubCategory()"
+              />
+              Topwear
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="Bottomwear"
+                onchange="toggleSubCategory()"
+              />
+              Bottomwear
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="Winterwear"
+                onchange="toggleSubCategory()"
+              />
+              Winterwear
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="products-container">
+        <div class="products-header">
+          <h2>ALL COLLECTIONS</h2>
+          <select
+            onchange="setSortType(event.target.value)"
+            class="sort-dropdown"
+          >
+            <option value="relavent">Sort by: Relavent</option>
+            <option value="low-high">Sort by: Low to High</option>
+            <option value="high-low">Sort by: High to Low</option>
+          </select>
+        </div>
+
+        <div class="products-grid">
+          <!-- Map Products -->
+          <!-- Example Product -->
+          <div class="product-card">
+            <img
+              src="product-image-url"
+              alt="Product Name"
+              class="product-image"
+            />
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">$Price</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------------------------------------------------footer--------------------------------------------------------------------- -->
+
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-logo">
+          <img src="assets/logo.png" class="logo" alt="logo" />
+          <p class="footer-description">Selamat datang di Circle K</p>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-links">
+          <p class="footer-title">COMPANY</p>
+          <ul class="footer-list">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Delivery</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <p class="footer-title">GET IN TOUCH</p>
+          <ul class="footer-list">
+            <li>+62-858-2436-4689</li>
+            <li>alfakiddrock7@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <p class="footer-copyright">
+          Copyright 2024@ ZAR.com - All Right Reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

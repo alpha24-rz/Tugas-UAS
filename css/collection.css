@@ -1,0 +1,81 @@
+/* Container for the entire collection section */
+.collection-container {
+  margin: 40px 160px;
+  padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.title h2 {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.title span {
+  color: #007bff; /* Custom color */
+}
+
+.description {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+/* Product Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Product Item Styling */
+.product-item {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

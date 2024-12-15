@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login / Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-img">
+          <img src="assets/logo.png" alt="#" />
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="collection.html">COLLECTION</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+
+        <div class="icon-img">
+          <a href="collection.html"
+            ><img src="assets/search_icon.png" alt=""
+          /></a>
+          <a href="login.html"><img src="assets/profile_icon.png" alt="" /></a>
+          <a href="cart.html"><img src="assets/cart_icon.png" alt="" /></a>
+        </div>
+      </div>
+    </header>
+    <div class="form-container">
+      <form id="login-form" class="form">
+        <div class="header">
+          <p id="form-title" class="title">Login</p>
+          <hr class="divider" />
+        </div>
+
+        <!-- Name Input for Sign Up -->
+        <input
+          id="name"
+          type="text"
+          class="input-field"
+          placeholder="Name"
+          required
+        />
+
+        <!-- Email Input -->
+        <input
+          id="email"
+          type="email"
+          class="input-field"
+          placeholder="Email"
+          required
+        />
+
+        <!-- Password Input -->
+        <input
+          id="password"
+          type="password"
+          class="input-field"
+          placeholder="Password"
+          required
+        />
+
+        <div class="footer">
+          <p id="forgot-password" class="link">Forgot your password?</p>
+          <p id="toggle-form" class="link">Create account</p>
+        </div>
+
+        <button id="submit-button" class="submit-button">Sign In</button>
+      </form>
+    </div>
+
+    <!-- -----------------------------------------------------footer--------------------------------------------------------------------- -->
+
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Logo and Description -->
+        <div class="footer-logo">
+          <img src="assets/logo.png" class="logo" alt="logo" />
+          <p class="footer-description">Selamat datang di Circle K</p>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-links">
+          <p class="footer-title">COMPANY</p>
+          <ul class="footer-list">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Delivery</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-contact">
+          <p class="footer-title">GET IN TOUCH</p>
+          <ul class="footer-list">
+            <li>+62-858-2436-4689</li>
+            <li>alfakiddrock7@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <hr />
+        <p class="footer-copyright">
+          Copyright 2024@ ZAR.com - All Right Reserved.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

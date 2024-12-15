@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Reset default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 160px;
+  background-color: #fff;
+}
+
+/* Logo Styling */
+.logo-img img {
+  width: 150px;
+  height: auto;
+}
+
+/* Menu Styling */
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  position: relative; /* Dibutuhkan untuk elemen pseudo */
+}
+
+.menu ul li a::after {
+  content: ""; /* Membuat elemen pseudo */
+  position: absolute;
+  bottom: -2px; /* Jarak dari teks */
+  left: 0;
+  width: 0; /* Awal garis tidak terlihat */
+  height: 2px; /* Ketebalan garis */
+  background-color: black;
+  transition: width 0.3s ease; /* Animasi lebar garis */
+}
+
+.menu ul li a:hover::after {
+  width: 100%; /* Garis melebar penuh saat hover */
+}
+
+/* Icon Styling */
+.icon-img img {
+  width: 20px;
+  height: auto;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.icon-img img:hover {
+  opacity: 0.7;
+}
+
+/* Media Query for Smaller Screens */
+@media (min-width: 640px) {
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .hero-left {
+    padding: 0;
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .main-title {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}

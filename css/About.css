@@ -1,0 +1,100 @@
+/* About Us Section Styles */
+.about-us-section {
+  padding: 10px 20px;
+  margin: 0px 160px;
+}
+
+/* Section Title */
+.section-title {
+  text-align: left;
+  font-size: 1rem;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 450px;
+}
+
+.about-description {
+  color: #4a4a4a;
+  font-size: 0.9rem;
+  font-stretch: narrower;
+  margin: 15px 50px;
+}
+
+.about-description p {
+  margin-bottom: 20px; /* Menambah jarak antar paragraf */
+}
+
+.about-description b {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Why Choose Us Section */
+.reason-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Kolom responsif */
+  border: 1px solid #ddd; /* Border luar */
+  border-left: none; /* Hindari garis ganda */
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.reason-box {
+  border-left: 1px solid #ddd; /* Garis antar kolom */
+  border-top: 1px solid #ddd; /* Garis antar baris */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Jarak antar elemen dalam box */
+}
+
+.reason-box:first-child {
+  border-top: none; /* Hindari garis ganda di atas */
+}
+
+.reason-box:nth-child(-n + 3) {
+  border-top: none; /* Hilangkan garis atas pada baris pertama */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .why-choose-us {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reason-box {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+  }
+}
+
+/* Newsletter Box */
+.newsletter-box {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  text-align: center;
+}

@@ -1,0 +1,129 @@
+.cart-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px;
+}
+
+.cart-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-title span {
+  color: #007bff;
+}
+
+.cart-items {
+  margin-bottom: 40px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 4fr 0.5fr 0.5fr;
+  gap: 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  align-items: center;
+  color: #333;
+  justify-content: center;
+}
+
+.cart-item .item-details {
+  display: flex;
+  gap: 20px;
+}
+
+.cart-item .item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.cart-item .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-item .item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cart-item .item-price-size {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-item .item-price {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cart-item .item-size {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+
+.cart-item .item-quantity {
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-item .item-delete {
+  width: 20px;
+  cursor: pointer;
+}
+
+.checkout-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart-total {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  width: 100%;
+  text-align: end;
+}
+
+.proceed-checkout-btn {
+  background-color: #000;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.proceed-checkout-btn:hover {
+  background-color: #333;
+}
